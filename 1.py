@@ -13,8 +13,6 @@ def main():
             return []
         return [data[start]] + grab_values(data, start + 1, count - 1)
 
-    # FIXED: Calculate the sum of SQUARES of POSITIVE integers
-    # (Renamed from sum_negatives to sum_squares)
     def sum_squares(arr, i=0):
         if i == len(arr):
             return 0
